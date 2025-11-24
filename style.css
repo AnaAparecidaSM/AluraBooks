@@ -322,7 +322,6 @@ body {
     gap: 0.1rem;
     background-color: var(--cor-texto);
     height: 13rem;
-    padding-left: 1.5rem;
     height: 38vh;
 }
 
@@ -565,7 +564,7 @@ body {
     }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1478px) {
 
     .cabecalho__navegacao__texto {
         display: block;
