@@ -154,7 +154,7 @@ body {
 
 
 .busca__pesquisar::placeholder {
-    color: var(--cor-texto)
+    color: var(--cor-texto);
 }
 
 .lancamentos , .mais-vendidos {
@@ -308,6 +308,7 @@ body {
     font-size: var(--tamanho--subtitulo);
     border: none;
     padding: 1rem 1.5rem 1rem 1.5rem;
+    cursor: pointer;
 }
 
 .topicos__botao:active {
@@ -364,7 +365,7 @@ body {
 
 .atualizacoes__pesquisar::placeholder {
     font-family: var(--fonte);
-    font-size: var(--tamanho--subtitulo);
+    font-size: 1rem;
     color: var(--cor-secundaria);
 }
 
@@ -384,7 +385,7 @@ body {
     padding-left: 1.5rem;
 }
 
-.cabecalho__logo-grande, .opcoes, .rodape__listas {
+.cabecalho__logo-grande, .opcoes, .rodape__listas, .cabecalho__navegacao__texto {
     display: none;
 }
 
@@ -457,13 +458,17 @@ body {
         padding-left: 10rem;
     }
 
+    .busca__pesquisar::placeholder {
+        font-size: 1rem;
+    }
+
     .lancamentos, .mais-vendidos{
         height: 6.6rem;
     }
 
     .lancamentos__titulo, .mais-vendidos__titulo {
-        font-size: 1.6rem;
-        padding-top: 3.2rem;    
+        font-size: var(--tamanho--titulo--desktop);
+        padding-top: 2.5rem;    
     }
 
     .swiper {
@@ -521,7 +526,7 @@ body {
         align-items: start;
         gap: 6.6rem;
         padding-top: 3rem;
-        height: 90vh;
+        height: 110vh;
     }
 
     .rodape__titulo {
@@ -560,5 +565,58 @@ body {
     }
 }
 
-@media screen and (min-width: 1728px) {
+@media screen and (min-width: 1200px) {
+
+    .cabecalho__navegacao__texto {
+        display: block;
+    }
+  
+    .cabecalho__navegacao__link {
+        display: flex;
+        align-items: center;
+        gap: 0.3rem;
+        font-size: 1.2rem;
+        color: var(--cor-texto2);
+        text-decoration: none;
+    }
+
+    .opcoes {
+        padding-right: 15rem;
+    }
+
+    .busca__pesquisar {
+        width: 37rem;
+    }
+
+    .busca__pesquisar::placeholder {
+        padding-left: 2rem;
+    }
+
+    .carrosel {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-right: 4rem;
+        margin: 4rem;
+        gap: 5rem;
+    }
+
+    .sugestao , .autora {
+        margin: 0;
+        width: 40rem;
+    }
+
+    .swiper {
+        width: 45rem;
+        margin: 0;
+    }
+
+    .topicos__botoes {
+        font-size: var(--tamanho--titulo--desktop);
+        padding-inline: 27rem;
+    }
+
+    .rodape {
+        height: 30rem;
+    }
 }

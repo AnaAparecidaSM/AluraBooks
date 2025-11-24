@@ -70,8 +70,10 @@
 
         <nav class="cabecalho__navegacao">
             <a href="#"><img class="cabecalho__favoritos" src="./assets/Favoritos.png" alt="Favoritos""></a>
-            <a href="#"><img class="cabecalho__sacola" src="./assets/Sacola.png" alt="Sacola"></a>
-            <a href="#"><img class= "cabecalho__usuario" src="./assets/Usuario.png" alt="Usuário"></a>
+            <a class="cabecalho__navegacao__link" href="#"><img class="cabecalho__sacola" src="./assets/Sacola.png" alt="Sacola"> 
+            <span class="cabecalho__navegacao__texto">Minha Sacola</span></a>
+            <a class="cabecalho__navegacao__link" href="#"><img class= "cabecalho__usuario" src="./assets/Usuario.png" alt="Usuário">
+            <span class="cabecalho__navegacao__texto">Minha Sacola</span></a>
         </nav>
     </header>
 
@@ -86,6 +88,7 @@
             <h2 class="lancamentos__titulo">ÚLTIMOS LANÇAMENTOS</h2>
         </section>
 
+
         <section class="carrosel">
             <div class="swiper">
                 <div class="swiper-pagination"></div>
@@ -98,26 +101,28 @@
                 </div>
                 <div class="swiper-scrollbar"></div>
             </div>
-        </section>
+            
         
-        <section class="sugestao">
-            <div class="sugestao__texto">
-                <h2 class="sugestao__titulo">Talvez você também se interesse por...</h2>
-                <h2 class="sugestao__livro">Angular 11 e Firebase</h2>
-                <h3 class="sugestao__descricao">Construindo uma aplicação integrada com a plataforma do Google.</h3>
+            <section class="sugestao">
+                <div class="sugestao__texto">
+                    <h2 class="sugestao__titulo">Talvez você também se interesse por...</h2>
+                    <h2 class="sugestao__livro">Angular 11 e Firebase</h2>
+                    <h3 class="sugestao__descricao">Construindo uma aplicação integrada com a plataforma do Google.</h3>
             
 
-                <div class="sugestao__icones">
-                    <a href="javascript:void(0)"><img class="sugestao__favoritos" src="./assets/Favoritos.png" alt="Favoritos""></a>
-                    <a href="javascript:void(0)"><img class="sugestao__sacola" src="./assets/Sacola.png" alt="Sacola"></a>
+                    <div class="sugestao__icones">
+                        <a href="javascript:void(0)"><img class="sugestao__favoritos" src="./assets/Favoritos.png" alt="Favoritos""></a>
+                        <a href="javascript:void(0)"><img class="sugestao__sacola" src="./assets/Sacola.png" alt="Sacola"></a>
+                    </div>
                 </div>
-            </div>
 
-            <div class="sugestao__imagem">
-                <img class="sugestao__editora" src="./assets/Perfil-escritora1.png" alt="Perfil da  Editora">
-                <input class="sugestao__botao" type="button" value="Saiba Mais">
-            </div>
+                <div class="sugestao__imagem">
+                    <img class="sugestao__editora" src="./assets/Perfil-escritora1.png" alt="Perfil da  Editora">
+                    <input class="sugestao__botao" type="button" value="Saiba Mais">
+                </div>
+            </section>
         </section>
+        
 
         <section class="mais-vendidos">
             <h2 class="mais-vendidos__titulo">MAIS VENDIDOS</h1>
@@ -135,7 +140,7 @@
                 </div>
                 <div class="swiper-scrollbar"></div>
             </div>
-        </section>
+        
 
         <section class="autora">
             <div class="autora__texto">
@@ -155,6 +160,7 @@
                 <input class="autora__botao" type="button" value="Saiba Mais">
             </div>
         </section>
+        </section>
 
         <section class="topicos">
             <h2 class="topicos__titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
@@ -173,7 +179,7 @@
 
          <section class="atualizacoes">
             <div class="atualizacoes__texto">
-                <h2 class="atualizacoes__titulo">Fique por dentro das <br> novidades!</h2>
+                <h2 class="atualizacoes__titulo">Fique por dentro das novidades!</h2>
                 <p class="atualizacoes__descricao">Atualizações de e-books, novos livros, <br> promoções e outros.</p>
             </div>
                 <input class="atualizacoes__pesquisar" type="search" placeholder="Cadastre seu e-mail">
